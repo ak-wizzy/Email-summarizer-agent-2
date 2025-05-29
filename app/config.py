@@ -11,4 +11,4 @@ SMTP_SERVER = os.getenv("SMTP_SERVER", "smtp.mail.yahoo.com")  # Default SMTP se
 SMTP_PORT = int(os.getenv("SMTP_PORT", 465))  # Default SMTP SSL port (465) for secure sending
 
 # Model configuration for summarization
-MODEL_NAME = os.getenv("MODEL_NAME", "facebook/bart-large-cnn")  # Set default model for summarization
+MODEL_NAME = os.getenv("MODEL_NAME", "philschmid/bart-large-cnn-samsum")  # Set default model for summarization
