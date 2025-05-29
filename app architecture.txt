@@ -1,0 +1,23 @@
++-----------+         +---------------+        +----------------+
+| Email Box | --->    | Email Scraper | --->   | Summarizer AI  |
++-----------+         +---------------+        +----------------+
+                                                    |
+                                                    v
+                                            +---------------+
+                                            | Output Method  |
+                                            | (e.g., Email,  |
+                                            | Dashboard)     |
+                                            +---------------+
+
+
+email-summarizer-agent/
+├── app/
+│   ├── main.py          # Entry point, handles API interaction
+│   ├── email_reader.py  # Fetches emails from your inbox
+│   ├── summarizer.py    # Summarizes text using the local model
+|   |-- telegram_notifier.py   # sends summarized email
+│   └── config.py        # Configuration settings (for email and model)
+├── Dockerfile           # Dockerfile to build the container
+├── crontab              # Cron job for periodic email fetching
+├── requirements.txt     # Python dependencies
+└── .env                 # Environment variables for sensitive information
